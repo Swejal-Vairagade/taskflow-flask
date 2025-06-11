@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Task</title></head>
+<body>
+    <h2>Edit Task</h2>
+    <form method="POST">
+        <label>Title:</label><br>
+        <input type="text" name="title" value="{{ task[1] }}" required><br><br>
+        <label>Description:</label><br>
+        <textarea name="description">{{ task[2] }}</textarea><br><br>
+        <input type="submit" value="Update Task">
+    </form>
+    <a href="/">← Back to Home</a>
+</body>
+</html>
